@@ -697,12 +697,15 @@ input, select, textarea {
 		.image.main {
 			display: block;
 			margin: 1.5rem auto;
-			width: 50%;
+			width: 100%;
 		}
 
 			.image.main img {
-				width: 100%;
+				width: 100%; /* Full width */
+				height: auto; /* Maintain aspect ratio */
+				max-width: 800px; /* Set a maximum width */
 			}
+		
 
 		@media screen and (max-width: 736px) {
 
@@ -928,7 +931,17 @@ input, select, textarea {
 					background-color: rgba(255, 255, 255, 0.175);
 				}
 
-/* Table */
+figure {
+	text-align: center; /* Center the content of the figure */
+}
+
+figcaption {
+	margin-top: 10px; /* Optional: add space above the caption */
+	font-style: italic; /* Optional: style the caption text */
+}
+			
+
+				/* Table */
 
 	.table-wrapper {
 		-webkit-overflow-scrolling: touch;
@@ -1158,7 +1171,7 @@ input, select, textarea {
 			-webkit-transition: -webkit-transform 0.325s ease-in-out, -webkit-filter 0.325s ease-in-out;
 			-ms-transition: -ms-transform 0.325s ease-in-out, -ms-filter 0.325s ease-in-out;
 			transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out;
-			background-image: url("../../images/bg.jpg");
+			background-image: url("../../images/UGC_9128_ESA.jpg");
 			background-position: center;
 			background-size: cover;
 			background-repeat: no-repeat;
@@ -1500,6 +1513,28 @@ input, select, textarea {
 				}
 
 		}
+
+		.video-container {
+			display: flex;
+			justify-content: space-between; /* Change to space-between to utilize full width */
+			gap: 20px; /* Space between the videos */
+			flex-wrap: wrap; /* Allow videos to wrap to next line on smaller screens */
+		}
+		
+		#movies video {
+			flex: 1;                   /* Allow videos to grow equally */
+			max-width: 95%;           /* Set max width for each video */
+			height: auto; 		/* Keep aspect ratio */
+			/* max-height:100%;   */        
+		}
+		
+		.video-title {
+			text-align: center;
+			margin-bottom: 20px; /* Space between title and videos */
+			font-size: 1.8em;    /* Font size of the title */
+		}
+		
+		
 
 /* Main */
 
