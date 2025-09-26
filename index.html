@@ -86,7 +86,8 @@
 								<li><a href="#intro">About Me</a></li>
 								<li><a href="#work">Research</a></li>
 								<!-- <li><a href="#pat">PAT</a></li>-->
-								<li><a href="#FG">FG</a></li>
+								<li><a href="#FG">Movies</a></li>
+								<li><a href="#pubs">Publications</a></li>
 								<!-- <li><a href="#about">CV</a></li> -->
 								<li><a href="#contact">Contact</a></li>
 								<!--<li><a href="#elements">Elements</a></li>-->
@@ -103,16 +104,37 @@
 								<p class="pno-space">
 								
 									<!-- Items contained in <b> tags are bolded! -->
-									<b>Education:</b><br> 
-									BSc Physics, New York University Abu Dhabi
-									
+									<b>Education:</b><br>
+									MSc Astrophysics, LMU Munich <br>
+									BSc Physics, New York University Abu Dhabi<br>
 								</p>
 								<p>
-									<b>Research Interests:</b> Galaxy Formation and Evolution, Numerical Astrophysics, Dark Matter, Large Scale Structure
+									<b>Research Interests:</b> Galaxy Formation and Evolution, Dark Matter, Small scale structure formation, Cosmological Simulations
 								</p>
 								<!--<span class="image main"><img src="images/avatar_snb.png" alt="" /></span>-->
-								<p>My research interests center on numerical cosmological simulations, specifically, the formation of large-scale structures in the Universe. This primarily includes modelling and analyzing the effects of Fuzzy Dark Matter (FDM) cosmologies on small-scale structure formation using Zoom-in Gasoline SPH simulations at z∼0. Additionally, I have previously worked on creating machine learning models that predict planetary habitability in binary star systems.								</p>
-								<p>In my senior year at NYU Abu Dhabi, I'm excited to work with the Galaxy Formation Group at the Center for Astrophysics and Space Science, guided by Dr. Andrea Maccio.</p>
+								<!-- <p>My research interests center on numerical cosmological simulations, specifically, the formation of large-scale structures in the Universe. This primarily includes modelling and analyzing the effects of Fuzzy Dark Matter (FDM) cosmologies on small-scale structure formation using Zoom-in Gasoline SPH simulations at z∼0. Additionally, I have previously worked on creating machine learning models that predict planetary habitability in binary star systems.								</p>
+								<p>In my senior year at NYU Abu Dhabi, I'm excited to work with the Galaxy Formation Group at the Center for Astrophysics and Space Science, guided by Dr. Andrea Maccio.</p> -->
+								<p>I study the formation and evolution of galaxies and galaxy clusters using a combination of cosmological simulations and observational data. My work spans multiple scales, from individual stars in nearby galaxies to galaxy clusters in the Local Universe.</p>
+
+								<h3>Current Research</h3>
+								<ul>
+								<li>
+									<strong>Intracluster Light in Galaxy Clusters:</strong> At the University Observatory Munich (DRAGONS group), I am working with zoom-in constrained simulations of Local Universe clusters to study the diffuse intracluster light (ICL) and its connection to cluster dynamics.
+								</li>
+								<li>
+									<strong>Variable Sources in IC 10:</strong> I am building a U-band catalog of variable sources in IC 10, a starburst dwarf galaxy in the Local Group, using ~5 years of weekly Swift UVOT data to explore how massive stars influence the interstellar medium.
+								</li>
+								</ul>
+
+								<h3>Previous Work</h3>
+								<ul>
+								<li>
+								<strong>Fuzzy-Gasoline Simulations:</strong> I explored how Fuzzy Dark Matter (FDM) shapes dwarf galaxy evolution using 30 high-resolution zoom-in simulations with FUZZY-GASOLINE, a modified GASOLINE2 code. The simulations include both hydrodynamical and dark matter-only runs, capturing baryonic processes—metal cooling, star formation, supernova feedback, and black hole physics—alongside the Madelung formulation of FDM. We found that FDM produces cored dark matter profiles in all haloes, especially in low-mass systems at high redshift, while baryons form cores in a specific mass range at low redshift. Despite these differences, stellar observables like star formation histories and velocity dispersions closely resemble Cold Dark Matter predictions, making it challenging to distinguish the two models through stars alone. We published our findings on the arXiv in November 2024 (<a href="https://arxiv.org/abs/2411.09733" target="_blank">arXiv:2411.09733</a>).
+								</li>
+								</ul>
+
+								<h3>Research Collaborations</h3>
+								<p>I am currently working with members of the DRAGONS group at the University Observatory Munich (USM) on zoom-in constrained simulations of Local Universe galaxy clusters. I previously collaborated with the Galaxy Formation Group (GFG) at NYU Abu Dhabi, working with Dr. Andrea Valerio Macciò and Dr. Matteo Nori on Fuzzy-Gasoline simulations, and with Dr. Joseph Gelfand at the Center for Astrophysics and Space Science (CASS) on observational studies of stellar populations and variable stars in IC 10. </p>
 							</article>
 
 						<!-- Work -->
@@ -141,16 +163,14 @@
 						<!-- Movies -->
 						<article id="FG">
 							<h1 class="major">Fuzzy-Gasoline</h1>
-                            <h2 class="major">Movies</h2>
-							
-							<h3>M : Dwarf Galaxy - 2 * 10<sup>10</sup> \( M_{\odot} \) </h3>
-                            <!-- Solar Masses -->
+							<h2 class="major">Movies</h2>
+						
+							<h3>M : Dwarf Galaxy - 2 * 10<sup>10</sup> M<sub>☉</sub></h3>
 							<ul class="movie-list">
 								<li>
-									<h4>Cosmological Evolution of Gas and Stars</h4>
-									<p>This movie illustrates the evolution of gas and stars in the M_2 (Fuzzy-Gasoline; FDM mass = 2 * m<sub>22</sub>) and M<sub>CDM</sub> simulations on a cosmological scale.</p>
-									<video width="520" height="150" controls> <!-- Ratio = 520/150 -->
-										<source src="movies/cosmo_1x_speed.mp4" type="video/mp4">
+									<h4>Evolution of Gas and Stars</h4>
+									<video width="520" height="200" controls>
+										<source src="movies/M_2_CDM/cosmo_1x.mp4" type="video/mp4">
 										Your browser does not support the video tag.
 									</video>
 								</li>
@@ -158,15 +178,26 @@
 								<hr>
 						
 								<li>
-									<h4>Cosmological Evolution of Dark Matter Halo</h4>
-									<p>This movie illustrates the evolution of the dark matter halo in the M_2 (Fuzzy-Gasoline; FDM mass = 2 * m<sub>22</sub>) and M<sub>CDM</sub> simulations on a cosmological scale.</p>
-									<video width="520" height="150" controls>
-										<source src="movies/dmcosmo_1x_speed.mp4" type="video/mp4">
+									<h4>Evolution of the DM Halo</h4>
+									<video width="520" height="200" controls>
+										<source src="movies/M_2_CDM/dmcosmo_1x.mp4" type="video/mp4">
 										Your browser does not support the video tag.
 									</video>
 								</li>
 							</ul>
 						</article>
+						
+						<article id="pubs">
+							<h1 class="major">Publications</h1>
+							<p>View my publications on the <a href="https://ui.adsabs.harvard.edu/search/q=orcid%3A0000-0002-1768-6251&sort=date%20desc%2C%20bibcode%20desc&p_=0" target="_blank">Astrophysics Data System (ADS)</a>.</p>
+							<ul>
+								<li>
+									M. Nori, <b>S. Bhatia</b>, A.V. Macciò, <em>Fuzzy-Gasoline: Cosmological hydrodynamical simulations of dwarf galaxy formation with Fuzzy Dark Matter</em>, under review in the <em>Monthly Notices of the Royal Astronomical Society</em> (<a href="https://arxiv.org/abs/2411.09733" target="_blank">arXiv:2411.09733</a>).
+								</li>
+							</ul>
+						</article>
+						
+						
 						
 						
 
@@ -191,38 +222,36 @@
 
 
 						<!-- Contact -->
-							<article id="contact">
-								<h2 class="major">Contact</h2>
-   								<p>Email: shubhan dot bhatia at nyu dot edu</p>
-
-								<!-- <h2 class="major">Contact</h2>
-								<form method="post" action="#">
-									<div class="fields">
-										<div class="field half">
-											<label for="name">Name</label>
-											<input type="text" name="name" id="name" />
-										</div>
-										<div class="field half">
-											<label for="email">Email</label>
-											<input type="text" name="email" id="email" />
-										</div>
-										<div class="field">
-											<label for="message">Message</label>
-											<textarea name="message" id="message" rows="4"></textarea>
-										</div>
-									</div>
-									<ul class="actions">
-										<li><input type="submit" value="Send Message" class="primary" /></li>
-										<li><input type="reset" value="Reset" /></li>
-									</ul>
-								</form>
-								<ul class="icons">
-									<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-									<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-									<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-									<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-								</ul> -->
-							</article>
+						<article id="contact">
+							<h1 class="major">Contact</h1>
+							<div style="display: flex; gap: 40px; align-items: center; flex-wrap: wrap;">
+								<div style="display: flex; align-items: center; gap: 8px;">
+									<!-- Email icon -->
+									<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+										<path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383l-4.708 2.825L15 12.383V5.383zM1 5.383v7l4.708-3.175L1 5.383zm5.396 3.106L1.5 13h13l-4.896-4.511-1.708 1.024-1.708-1.024z"/>
+									</svg>
+									<span>snb463@nyu.edu, S.Bhatia@campus.lmu.de</span>
+								</div>
+						
+								<div style="display: flex; align-items: center; gap: 8px;">
+									<!-- LinkedIn icon -->
+									<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+										<path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.252c.837 0 1.357-.554 1.357-1.248-.015-.71-.52-1.248-1.342-1.248C3.59 2.65 3 3.188 3 3.898c0 .694.52 1.248 1.342 1.248h.001zm4.908 8.252h2.4V9.359c0-.206.015-.412.076-.559.167-.412.547-.838 1.186-.838.837 0 1.17.631 1.17 1.556v4.536h2.4V9.235c0-2.22-1.183-3.251-2.762-3.251-1.276 0-1.845.706-2.165 1.206h.031v-1.037h-2.4c.031.688 0 7.225 0 7.225z"/>
+									</svg>
+									<a href="https://www.linkedin.com/in/shubhan-bhatia-6b744214a/" target="_blank">shubhan-bhatia</a>
+								</div>
+						
+								<div style="display: flex; align-items: center; gap: 8px;">
+									<!-- GitHub icon -->
+									<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+										<path d="M8 0C3.58 0 0 3.58 0 8a8 8 0 0 0 5.47 7.59c.4.074.547-.174.547-.386 0-.19-.007-.693-.01-1.36-2.226.483-2.695-1.073-2.695-1.073-.364-.924-.89-1.17-.89-1.17-.727-.497.055-.487.055-.487.803.056 1.225.825 1.225.825.714 1.223 1.873.87 2.33.666.072-.517.28-.87.508-1.07-1.777-.202-3.644-.888-3.644-3.955 0-.873.312-1.588.823-2.148-.083-.202-.357-1.016.078-2.12 0 0 .672-.215 2.2.82a7.676 7.676 0 0 1 2-.268 7.66 7.66 0 0 1 2 .268c1.527-1.035 2.198-.82 2.198-.82.437 1.104.163 1.918.08 2.12.513.56.822 1.275.822 2.148 0 3.073-1.87 3.75-3.652 3.947.288.25.543.738.543 1.488 0 1.074-.01 1.941-.01 2.203 0 .214.144.464.55.386A8.001 8.001 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+									</svg>
+									<a href="https://github.com/ShubhanBhatia42" target="_blank">ShubhanBhatia42</a>
+								</div>
+							</div>
+						</article>
+						
+						
 
 						<!-- Elements -->
 							<article id="elements">
@@ -469,41 +498,43 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 					</div>
 
 				<!-- Footer -->
-<footer id="footer">
-    <p class="copyright">&copy; Shubhan Bhatia. Design: 
-        <a href="https://html5up.net">HTML5 UP</a>.
-    </p>
-    <p class="copyright">
-        <script type="text/javascript">
-            // format date as dd-mmm-yy
-            function date_ddmmmyy(date) {
-                var d = date.getDate();
-                var m = date.getMonth() + 1;
-                var y = date.getYear();
-                
-                if (y >= 2000) y -= 2000;
-                if (y >= 100) y -= 100;
-
-                var mmm = (1 == m) ? 'Jan' : (2 == m) ? 'Feb' : (3 == m) ? 'Mar' :
-                          (4 == m) ? 'Apr' : (5 == m) ? 'May' : (6 == m) ? 'Jun' :
-                          (7 == m) ? 'Jul' : (8 == m) ? 'Aug' : (9 == m) ? 'Sep' :
-                          (10 == m) ? 'Oct' : (11 == m) ? 'Nov' : 'Dec';
-
-                return (d < 10 ? "0" + d : d) + "-" + mmm + "-" + (y < 10 ? "0" + y : y);
-            }
-
-            // get last modified date
-            function date_lastmodified() {
-                var lmd = document.lastModified;
-                var d1 = Date.parse(lmd);
-                return d1 ? date_ddmmmyy(new Date(d1)) : "Unknown";
-            }
-
-            // display last modified date
-            document.write("This page was updated on " + date_lastmodified());
-        </script>
-    </p>
-</footer>
+				<footer id="footer">
+					<p class="copyright">&copy; Shubhan Bhatia. Design: 
+						<a href="https://html5up.net">HTML5 UP</a>.
+					</p>
+					<p class="copyright">
+						<script type="text/javascript">
+							// format date as dd-mmm-yy
+							function date_ddmmmyy(date) {
+								var d = date.getDate();
+								var m = date.getMonth() + 1;
+								var y = date.getYear();
+								
+								if (y >= 2000) y -= 2000;
+								if (y >= 100) y -= 100;
+				
+								var mmm = (1 == m) ? 'Jan' : (2 == m) ? 'Feb' : (3 == m) ? 'Mar' :
+										  (4 == m) ? 'Apr' : (5 == m) ? 'May' : (6 == m) ? 'Jun' :
+										  (7 == m) ? 'Jul' : (8 == m) ? 'Aug' : (9 == m) ? 'Sep' :
+										  (10 == m) ? 'Oct' : (11 == m) ? 'Nov' : 'Dec';
+				
+								return (d < 10 ? "0" + d : d) + "-" + mmm + "-" + (y < 10 ? "0" + y : y);
+							}
+				
+							// get last modified date
+							function date_lastmodified() {
+								var lmd = document.lastModified;
+								var d1 = Date.parse(lmd);
+								return d1 ? date_ddmmmyy(new Date(d1)) : "Unknown";
+							}
+				
+							// display last modified date
+							document.write("This page was updated on " + date_lastmodified());
+						</script>
+					</p>
+					<p class="copyright">Background image: UGC 9128 (HST)</p>
+				</footer>
+				
 
 			</div>
 
