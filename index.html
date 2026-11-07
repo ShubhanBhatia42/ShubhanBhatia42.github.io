@@ -17,7 +17,7 @@
 		<!-- Title and Description -->
 		<title>Shubhan Bhatia</title>
 		<meta name="description" content="Shubhan Bhatia's Personal Website – Astrophysics researcher and MSc student at University Observatory Munich (USM), LMU. Previously, at NYU Abu Dhabi. Discover my projects and research on galaxy formation, dark matter, and cosmological simulations, and how to get in touch.">
-		<meta name="keywords" content="Shubhan Bhatia, astrophysics, cosmology, galaxy formation, NYU Abu Dhabi, research portfolio">
+		<meta name="keywords" content="Shubhan Bhatia, astrophysics, cosmology, galaxy clusters, intracluster light, hydrostatic mass bias, galaxy formation, LMU Munich, NYU Abu Dhabi, research portfolio">
 		<link rel="canonical" href="https://shubhanbhatia42.github.io/">
 	  
 		<!-- Open Graph -->
@@ -37,7 +37,7 @@
 			  "image": "https://shubhanbhatia42.github.io/images/Shubhan_Bhatia.jpg",
 			  "sameAs": [
 				"https://github.com/shubhanbhatia42",
-				"https://linkedin.com/in/shubhanbhatia42"
+				"https://www.linkedin.com/in/shubhan-bhatia-6b744214a/"
 			  ],
 			  "jobTitle": "Graduate Researcher in Astrophysics",
 			  "affiliation": [
@@ -94,6 +94,7 @@
 								<li><a href="#work">Research</a></li>
 								<!-- <li><a href="#pat">PAT</a></li>-->
 								<li><a href="#FG">Movies</a></li>
+								<li><a href="#software">Software</a></li>
 								<li><a href="#pubs">Publications</a></li>
 								<!-- <li><a href="#about">CV</a></li> -->
 								<li><a href="#contact">Contact</a></li>
@@ -120,7 +121,8 @@
 								I study the formation and evolution of galaxies and galaxy clusters using a combination of cosmological simulations and observational data. My work spans multiple scales, from individual stars in nearby galaxies to galaxy clusters in the Local Universe.
 							</p>
 							<p>
-								<b>Sneak-Peek into what I've been working on (<a href="#research">see more in 'Research'</a>):</b><br>
+								<b>Sneak-Peek into what I've been working on (<a href="#work">see more in 'Research'</a>):</b><br>
+								* Hydrostatic Mass Bias: how well X-ray observations recover the true mass of galaxy clusters<br>
 								* Intra-cluster Light (ICL) as a tool to adjudicate a Galaxy Cluster's Dynamical Activity<br>
 								* Massive stars in a Local Group Dwarf Galaxy, and their impact on the Interstellar Medium (ISM) and subsequent star formation<br>
 								* Fuzzy Dark Matter (FDM) and Dwarf Galaxies; impact of FDM on small-scale structure formation
@@ -135,14 +137,19 @@
 						<article id="work">
 							<h2 class="major">Research</h2>
 							
+							<h3>Hydrostatic Mass Bias in Galaxy Clusters</h3>
+							<p>
+								Galaxy clusters are the largest gravitationally bound objects in the Universe, and counting them by mass is a sensitive test of cosmology, but only if their masses are measured accurately. A common approach uses X-rays from the hot gas that fills a cluster: if that gas is in hydrostatic equilibrium, meaning its pressure exactly balances the pull of gravity, its temperature and density reveal the cluster's total mass. In reality, bulk motions and turbulence also support the gas, so this "hydrostatic mass" tends to underestimate the true mass. For my Master's thesis at the University Observatory Munich, supervised by Apl. Prof. Dr. Klaus Dolag, I test this on 42 simulated Local Universe clusters: I create synthetic X-ray observations, reconstruct hydrostatic mass profiles as an observer would, and compare them with the true masses known from the simulations. The typical bias is small, around 5&ndash;8%, but it varies from cluster to cluster (scatter of about 10%) and grows for more dynamically disturbed clusters. A regression-based correction halves the per-cluster mass error, from about 12% to 6%.
+							</p>
+
 							<h3>Intracluster Light in Galaxy Clusters</h3>
 							<p>
-								As a member of the DRAGONS group at the University Observatory Munich, I study intracluster light (ICL) as a tracer of galaxy cluster dynamics, in preparation for LSST and Euclid. I generate mock broadband images from high-resolution zoom-in simulations of the Simulating the LOcal Web (SLOW) project (<a href="https://arxiv.org/abs/2302.10960" target="_blank">arXiv:2302.10960</a>), targeting Local Universe clusters such as Coma and Virgo. After masking satellite galaxies, I measure surface brightness profiles and the light fraction of the brightest cluster galaxy plus ICL (f<sub>BCG+ICL</sub>), which correlates with cluster formation redshift (z<sub>form</sub>). I compare these with the clusters' 3D mass-accretion histories (MAHs) to connect their assembly histories to ICL formation.
-							</p>
+								As a member of the DRAGONS group at the University Observatory Munich, I study intracluster light (ICL) as a tracer of galaxy cluster dynamics, in preparation for LSST and Euclid. I generate mock broadband images from the Lower Decks suite, high-resolution zoom-in simulations of Local Universe clusters such as Coma and Virgo, drawn from the larger Simulating the LOcal Web (SLOW) simulation box (<a href="https://arxiv.org/abs/2302.10960" target="_blank">arXiv:2302.10960</a>). After masking satellite galaxies, I measure surface brightness profiles and the combined light fraction of the intracluster light and brightest cluster galaxy (ICL+BCG; f<sub>ICL+BCG</sub>), which correlates with cluster formation redshift (z<sub>form</sub>) and is a strong tracer of a cluster's dynamical state in 3D. My current work tests whether this fraction survives projection onto the sky: it can be recovered to within about 4.3 percentage points, with the masking aperture, rather than the viewing angle, dominating the error. I also compare these measurements with the clusters' 3D mass-accretion histories (MAHs) to connect their assembly histories to ICL formation.
+								</p>
 
 							<h3>Variable Sources in IC 10</h3>
 							<p>
-								In collaboration with Dr. Joseph Gelfand at NYU Abu Dhabi, I explored massive stars in IC 10, a starburst dwarf galaxy in the Local Group, using Swift UV and X-ray observations. IC 10 hosts Wolf-Rayet (WR) stars, Luminous Blue Variables (LBVs), and high-mass X-ray binaries (HMXBs) such as IC 10 X-1 and X-2. Leveraging five years of weekly Swift UVOT U-band data, I compiled a catalog of variable sources to assess their influence on the interstellar medium (ISM) and star formation. The UV data reveal dust formation in WR winds, giant eruptions from LBVs, and accretion variability in HMXBs, shedding light on how these massive stars inject energy and material into the ISM. Complementary multi-wavelength observations from the Las Cumbres Observatory and Zwicky Transient Facility (<a href="https://iopscience.iop.org/article/10.3847/1538-4365/adc7fe" target="_blank">ApJS 268 43</a>) enhance our understanding of massive star feedback in IC 10’s dynamic starburst environment.
+								In collaboration with Dr. Joseph Gelfand at NYU Abu Dhabi, I explored massive stars in IC 10, a starburst dwarf galaxy in the Local Group, using Swift UV and X-ray observations. IC 10 hosts Wolf-Rayet (WR) stars, Luminous Blue Variables (LBVs), and high-mass X-ray binaries (HMXBs) such as IC 10 X-1 and X-2. Using a roughly five-year campaign of weekly Swift/UVOT observations, I built light curves for about 750 sources identified by the Zwicky Transient Facility, picked out the UV-detected, variable and periodic ones, and fitted their spectral energy distributions. The UV sources turned out to be concentrated along the edges of HI holes, linking massive stars to the structure of the interstellar medium (ISM) and to star formation. The UV data reveal dust formation in WR winds, giant eruptions from LBVs, and accretion variability in HMXBs, shedding light on how these massive stars inject energy and material into the ISM. Complementary multi-wavelength observations from the Las Cumbres Observatory and Zwicky Transient Facility (<a href="https://iopscience.iop.org/article/10.3847/1538-4365/adc7fe" target="_blank">ApJS 268 43</a>) enhance our understanding of massive star feedback in IC 10’s dynamic starburst environment.
 							</p>
 						
 							<h3>Fuzzy-Gasoline Simulations</h3>
@@ -154,7 +161,7 @@
 								</figcaption>
 							</figure>
 							<p>
-								As part of the Galaxy Formation Group at NYU Abu Dhabi, I contributed to the FUZZY-GASOLINE project, analyzing 18 high-resolution zoom-in simulations. These simulations covered three dwarf galaxy systems, each modeled with three dark matter settings (two Fuzzy Dark Matter (FDM) particle masses and one Cold Dark Matter (CDM) from the NIHAO project) and two configurations (dark-matter-only and dark matter with baryons, including hydrodynamics). Using the FUZZY-GASOLINE code, a modified GASOLINE2 framework, the simulations incorporated the Madelung formulation of FDM and baryonic processes such as metal cooling, star formation, supernova feedback, and black hole physics. Spanning redshifts from z = 99 to z = 0, our results showed that FDM produces cored dark matter profiles in all haloes, especially in low-mass systems at high redshift, while baryonic feedback drives core formation in specific mass ranges at low redshift. Stellar observables, including star formation histories and velocity dispersions, showed minimal differences between FDM and CDM, making it challenging to distinguish them using stellar data alone. Our findings were published on arXiv in November 2024 (<a href="https://arxiv.org/abs/2411.09733" target="_blank">arXiv:2411.09733</a>). <br> View FUZZY-GASOLINE movies of the M system’s gas, stars, and dark matter evolution <a href="#FG">here</a>.
+								As part of the Galaxy Formation Group at NYU Abu Dhabi, I contributed to the FUZZY-GASOLINE project, analyzing 18 high-resolution zoom-in simulations. These simulations covered three dwarf galaxy systems, each modeled with three dark matter settings (two Fuzzy Dark Matter (FDM) particle masses and one Cold Dark Matter (CDM) from the NIHAO project) and two configurations (dark-matter-only and dark matter with baryons, including hydrodynamics). Using the FUZZY-GASOLINE code, a modified GASOLINE2 framework, the simulations incorporated the Madelung formulation of FDM and baryonic processes such as metal cooling, star formation, supernova feedback, and black hole physics. Spanning redshifts from z = 99 to z = 0, our results showed that FDM produces cored dark matter profiles in all haloes, especially in low-mass systems at high redshift, while baryonic feedback drives core formation in specific mass ranges at low redshift. Stellar observables, including star formation histories and velocity dispersions, showed minimal differences between FDM and CDM, apart from delayed star formation in one halo, making it challenging to distinguish them using stellar data alone. Our findings were published on arXiv in November 2024 (<a href="https://arxiv.org/abs/2411.09733" target="_blank">arXiv:2411.09733</a>). <br> View FUZZY-GASOLINE movies of the M system’s gas, stars, and dark matter evolution <a href="#FG">here</a>.
 							</p>
 						
 							<h3>Fuzzy-HELLO Project</h3>
@@ -194,13 +201,38 @@
 							</ul>
 						</article>
 						
+						<!-- Software -->
+						<article id="software">
+							<h2 class="major">Research Software</h2>
+							<h3>sim-highline <small>(beta)</small></h3>
+							<p>
+								sim-highline is an open, curated database and web app of about 1,600 published galaxy scaling relations from more than 20 cosmological simulation suites, including EAGLE, IllustrisTNG, SIMBA and COLIBRE. Every relation comes with full provenance, and scripted checks compare it against the published values.
+							</p>
+							<ul class="actions">
+								<li><a href="https://shubhanbhatia42.github.io/sim-highline/highline.html" target="_blank" class="button">App</a></li>
+								<li><a href="https://github.com/ShubhanBhatia42/sim-highline" target="_blank" class="button">Code</a></li>
+								<li><a href="https://doi.org/10.5281/zenodo.23217259" target="_blank" class="button">DOI</a></li>
+							</ul>
+						</article>
+
 						<article id="pubs">
 							<h1 class="major">Publications</h1>
 							<p>View my publications on the <a href="https://ui.adsabs.harvard.edu/search/q=orcid%3A0000-0002-1768-6251&sort=date%20desc%2C%20bibcode%20desc&p_=0" target="_blank">Astrophysics Data System (ADS)</a>.</p>
 							<ul>
 								<li>
-									M. Nori, <b>S. Bhatia</b>, A.V. Macciò, <em>Fuzzy-Gasoline: Cosmological hydrodynamical simulations of dwarf galaxy formation with Fuzzy Dark Matter</em>, preprint on arXiv (<a href="https://arxiv.org/abs/2411.09733" target="_blank">arXiv:2411.09733</a>).
+									<b>S. Bhatia</b>, L. Kimmig, R.-S. Remus, B. Seidel, K. Dolag, M. Kluge, S. Brough, <em>How Old Are You Really? Validating the ICL+BCG Fraction as a Dynamical Age Tracer of Galaxy Clusters in Projection</em>, in preparation; submission to <em>Astronomy &amp; Astrophysics</em> planned for November 2026.
 								</li>
+								<li>
+									M. Nori, <b>S. Bhatia</b>, A.V. Macciò, <em>Fuzzy-Gasoline: Cosmological hydrodynamical simulations of dwarf galaxy formation with Fuzzy Dark Matter</em>, preprint on arXiv (<a href="https://arxiv.org/abs/2411.09733" target="_blank">arXiv:2411.09733</a>); in preparation for resubmission.
+								</li>
+							</ul>
+
+							<h3>Talks, Posters and Schools</h3>
+							<ul>
+								<li><b>Saas-Fee Advanced Course</b> (Jan. 2027, Saas-Fee, Switzerland): registered participant, <em>From Particle Physics to Astrophysics: Cold Dark Matter and Beyond</em>.</li>
+								<li><b>USM Science Day</b> (Oct. 2026, Munich): talk, <em>Can Projected ICL+BCG Fractions Trace Cluster Formation Time?</em></li>
+								<li><b>8th ICM Theory and Computation Workshop</b> (Jul. 2026, Brno, Czech Republic): poster and flash talk, <em>Validating the ICL+BCG Fraction in Projection as a Dynamical Age Tracer of Galaxy Clusters Using the Lower Decks Zoom-in Simulations</em>.</li>
+								<li><b>MSc Science Day, LMU Munich</b> (2025&ndash;2026): three research talks on intracluster light, galaxy-cluster assembly and cosmological simulations.</li>
 							</ul>
 						</article>
 						
