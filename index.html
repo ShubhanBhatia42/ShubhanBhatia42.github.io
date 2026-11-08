@@ -82,10 +82,11 @@
 								<img src="images/Shubhan_Bhatia.jpg" alt="Portrait of Shubhan Bhatia" width="280" height="320" style="width:280px; height:320px; object-fit: cover; margin-bottom: 20px;">
 								<!-- <p>BSc. Student at NYU Abu Dhabi</p> -->
 								<!-- <p>- Galaxy Formation Group, Center for Astrophysics and Space Science, NYUAD</p> -->
+								<p> Cosmological simulations of galaxies and galaxy clusters </p>
 								<p> CAST &amp; DRAGONS Groups, University Observatory Munich (USM), LMU </p>
 								<p>
 									<!-- Note you will want to change where this points to! -->
-									<a href="images/SB_CV.pdf" target="_blank">Curriculum Vitae</a>
+									<a href="images/SB_CV.pdf" target="_blank" class="button">Curriculum Vitae</a>
 								</p>
 							</div>							
 						</div>
@@ -93,7 +94,6 @@
 							<ul>
 								<li><a href="#intro">About Me</a></li>
 								<li><a href="#work">Research</a></li>
-								<li><a href="#FG">Movies</a></li>
 								<li><a href="#software">Software</a></li>
 								<li><a href="#pubs">Publications</a></li>
 								<li><a href="#contact">Contact</a></li>
@@ -107,6 +107,14 @@
 						<!-- Intro -->
 						<article id="intro">
 							<h2 class="major">About Me</h2>
+							<h3>News</h3>
+							<ul>
+								<li><b>Jan. 2027:</b> Attending the Saas-Fee Advanced Course on Cold Dark Matter and Beyond.</li>
+								<li><b>Nov. 2026:</b> Preparing the ICL+BCG projection paper for submission to <em>A&amp;A</em>.</li>
+								<li><b>Oct. 2026:</b> Talk at the USM Science Day: <em>Can Projected ICL+BCG Fractions Trace Cluster Formation Time?</em></li>
+								<li><b>Jul. 2026:</b> Poster and flash talk at the 8th ICM Theory and Computation Workshop in Brno.</li>
+								<li><b>Mar. 2026:</b> Started my Master's thesis on hydrostatic mass bias in galaxy clusters.</li>
+							</ul>
 							<p class="pno-space">
 								<b>Education:</b><br>
 								MSc Astrophysics, LMU Munich <br>
@@ -159,9 +167,21 @@
 								</figcaption>
 							</figure>
 							<p>
-								As part of the Galaxy Formation Group at NYU Abu Dhabi, I contributed to the FUZZY-GASOLINE project, analyzing 18 high-resolution zoom-in simulations. These simulations covered three dwarf galaxy systems, each modeled with three dark matter settings (two Fuzzy Dark Matter (FDM) particle masses and one Cold Dark Matter (CDM) from the NIHAO project) and two configurations (dark-matter-only and dark matter with baryons, including hydrodynamics). Using the FUZZY-GASOLINE code, a modified GASOLINE2 framework, the simulations incorporated the Madelung formulation of FDM and baryonic processes such as metal cooling, star formation, supernova feedback, and black hole physics. Spanning redshifts from z = 99 to z = 0, our results showed that FDM produces cored dark matter profiles in all haloes, especially in low-mass systems at high redshift, while baryonic feedback drives core formation in specific mass ranges at low redshift. Stellar observables, including star formation histories and velocity dispersions, showed minimal differences between FDM and CDM, apart from delayed star formation in one halo, making it challenging to distinguish them using stellar data alone. Our findings were published on arXiv in November 2024 (<a href="https://arxiv.org/abs/2411.09733" target="_blank">arXiv:2411.09733</a>). <br> View FUZZY-GASOLINE movies of the M system’s gas, stars, and dark matter evolution <a href="#FG">here</a>.
+								As part of the Galaxy Formation Group at NYU Abu Dhabi, I contributed to the FUZZY-GASOLINE project, analyzing 18 high-resolution zoom-in simulations. These simulations covered three dwarf galaxy systems, each modeled with three dark matter settings (two Fuzzy Dark Matter (FDM) particle masses and one Cold Dark Matter (CDM) from the NIHAO project) and two configurations (dark-matter-only and dark matter with baryons, including hydrodynamics). Using the FUZZY-GASOLINE code, a modified GASOLINE2 framework, the simulations incorporated the Madelung formulation of FDM and baryonic processes such as metal cooling, star formation, supernova feedback, and black hole physics. Spanning redshifts from z = 99 to z = 0, our results showed that FDM produces cored dark matter profiles in all haloes, especially in low-mass systems at high redshift, while baryonic feedback drives core formation in specific mass ranges at low redshift. Stellar observables, including star formation histories and velocity dispersions, showed minimal differences between FDM and CDM, apart from delayed star formation in one halo, making it challenging to distinguish them using stellar data alone. Our findings were published on arXiv in November 2024 (<a href="https://arxiv.org/abs/2411.09733" target="_blank">arXiv:2411.09733</a>). <br> Movies of the M system’s gas, stars, and dark matter evolution are below.
 							</p>
 						
+							<h4>Movies: M system (2 &times; 10<sup>10</sup> M<sub>☉</sub>)</h4>
+							<p class="pno-space"><b>Evolution of gas and stars</b></p>
+							<video controls preload="metadata" style="width:100%; height:auto; margin-bottom: 1.5rem;">
+								<source src="movies/M_2_CDM/cosmo_1x.mp4" type="video/mp4">
+								Your browser does not support the video tag.
+							</video>
+							<p class="pno-space"><b>Evolution of the dark matter halo</b></p>
+							<video controls preload="metadata" style="width:100%; height:auto;">
+								<source src="movies/M_2_CDM/dmcosmo_1x.mp4" type="video/mp4">
+								Your browser does not support the video tag.
+							</video>
+
 							<h3>Fuzzy-HELLO Project</h3>
 							<p>
 								After graduating in Spring 2024, I led the Fuzzy-HELLO project, an extension of the FUZZY-GASOLINE simulations inspired by the HELLO suite and built upon the NIHAO simulation framework. The project focused on high-redshift (z ~ 3) simulations with enhanced physics, including local photoionization feedback, black hole feedback, and updated chemical enrichment modules. By leveraging higher resolutions and the stronger FDM Quantum Potential at early times, we aimed to probe FDM's impact on dark matter-dominated dwarf galaxies. The weaker baryonic feedback at high redshift amplifies FDM-driven core-cusp differences, which were expected to manifest in observable properties like star formation histories. The project is currently inactive; it built on my experience developing analysis pipelines and running simulations on the Jubail HPC Linux cluster at NYU Abu Dhabi.
@@ -171,33 +191,6 @@
 						
 						
 											
-						
-						<!-- Movies -->
-						<article id="FG">
-							<h1 class="major">Fuzzy-Gasoline</h1>
-							<h2 class="major">Movies</h2>
-						
-							<h3>M : Dwarf Galaxy - 2 * 10<sup>10</sup> M<sub>☉</sub></h3>
-							<ul class="movie-list">
-								<li>
-									<h4>Evolution of Gas and Stars</h4>
-									<video width="520" height="200" controls>
-										<source src="movies/M_2_CDM/cosmo_1x.mp4" type="video/mp4">
-										Your browser does not support the video tag.
-									</video>
-								</li>
-						
-								<hr>
-						
-								<li>
-									<h4>Evolution of the DM Halo</h4>
-									<video width="520" height="200" controls>
-										<source src="movies/M_2_CDM/dmcosmo_1x.mp4" type="video/mp4">
-										Your browser does not support the video tag.
-									</video>
-								</li>
-							</ul>
-						</article>
 						
 						<!-- Software -->
 						<article id="software">

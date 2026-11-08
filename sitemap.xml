@@ -27,14 +27,6 @@
     <priority>0.8</priority>
   </url>
 
-  <!-- Fuzzy-Gasoline (Movies) Section -->
-  <url>
-    <loc>https://shubhanbhatia42.github.io/#FG</loc>
-    <lastmod>2026-11-07</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
   <!-- Publications Section -->
   <url>
     <loc>https://shubhanbhatia42.github.io/#pubs</loc>
