@@ -1404,6 +1404,51 @@ figcaption {
 			border-left: 0;
 		}
 
+		/* Nav: six items, so the template's centre line needs equal-width items to land on a divider. */
+
+			@media screen and (min-width: 981px) {
+
+				#header nav ul li {
+					-moz-flex: 0 0 10rem;
+					-webkit-flex: 0 0 10rem;
+					-ms-flex: 0 0 10rem;
+					flex: 0 0 10rem;
+				}
+
+					#header nav ul li a {
+						min-width: 0;
+						padding: 0 0.75rem;
+						text-align: center;
+						white-space: nowrap;
+					}
+
+			}
+
+			@media screen and (min-width: 481px) and (max-width: 980px) {
+
+				#header nav ul {
+					-moz-flex-wrap: wrap;
+					-webkit-flex-wrap: wrap;
+					-ms-flex-wrap: wrap;
+					flex-wrap: wrap;
+					justify-content: center;
+				}
+
+					#header nav ul li a {
+						min-width: 0;
+						padding: 0 1rem;
+					}
+
+				#header nav.use-middle:after {
+					display: none;
+				}
+
+				#header nav.use-middle ul li.is-middle {
+					border-left: solid 1px #ffffff;
+				}
+
+			}
+
 		body.is-article-visible #header {
 			-moz-transform: scale(0.95);
 			-webkit-transform: scale(0.95);
